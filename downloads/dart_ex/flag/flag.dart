@@ -1,4 +1,4 @@
-iimport 'dart:html';
+import 'dart:html';
 import 'dart:math' as Math;
 
 CanvasElement canvas;
@@ -20,6 +20,7 @@ void main() {
   querySelector("#roc").onClick.listen((e) => drawROC(ctx));
   querySelector("#ru").onClick.listen((e) => drawRU(ctx));
   querySelector("#ne").onClick.listen((e) => drawNE(ctx));
+  querySelector("#ge").onClick.listen((e) => drawGE(ctx));
   querySelector("#button").onClick.listen((e) => clearCanvas());
 }
 void drawFR(ctx){
@@ -91,6 +92,15 @@ void drawNE(ctx){
   ctx.fillStyle = '#ffffff';
   ctx.fillRect(0, 0, flag_w, flag_h*2/3);
   ctx.fillStyle = '#ae1c28';
+  ctx.fillRect(0, 0, flag_w, flag_h/3);
+}
+void drawGE(ctx){
+  ctx.clearRect(0, 0, flag_w, flag_h);
+  ctx.fillStyle = '#ffce00';
+  ctx.fillRect(0, 0, flag_w, flag_h);
+  ctx.fillStyle = '#dd0000';
+  ctx.fillRect(0, 0, flag_w, flag_h*2/3);
+  ctx.fillStyle = '#000000';
   ctx.fillRect(0, 0, flag_w, flag_h/3);
 }
 void clearCanvas(){
