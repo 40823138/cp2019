@@ -1,4 +1,4 @@
-import 'dart:html';
+iimport 'dart:html';
 import 'dart:math' as Math;
 
 CanvasElement canvas;
@@ -18,7 +18,8 @@ void main() {
   querySelector("#fr").onClick.listen((e) => drawFR(ctx));
   querySelector("#jp").onClick.listen((e) => drawJP(ctx));
   querySelector("#roc").onClick.listen((e) => drawROC(ctx));
-  querySelector("#tp").onClick.listen((e) => drawTP(ctx));
+  querySelector("#ru").onClick.listen((e) => drawRU(ctx));
+  querySelector("#ne").onClick.listen((e) => drawNE(ctx));
   querySelector("#button").onClick.listen((e) => clearCanvas());
 }
 void drawFR(ctx){
@@ -74,13 +75,22 @@ void drawROC(ctx){
   ctx.fillStyle = '#fff';
   ctx.fill();
 }
-void drawTP(ctx){
+void drawRU(ctx){
   ctx.clearRect(0, 0, flag_w, flag_h);
   ctx.fillStyle = '#d52b1e';
   ctx.fillRect(0, 0, flag_w, flag_h);
   ctx.fillStyle = '#0039a6';
   ctx.fillRect(0, 0, flag_w, flag_h*2/3);
   ctx.fillStyle = '#fff';
+  ctx.fillRect(0, 0, flag_w, flag_h/3);
+}
+void drawNE(ctx){
+  ctx.clearRect(0, 0, flag_w, flag_h);
+  ctx.fillStyle = '#21468b';
+  ctx.fillRect(0, 0, flag_w, flag_h);
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(0, 0, flag_w, flag_h*2/3);
+  ctx.fillStyle = '#ae1c28';
   ctx.fillRect(0, 0, flag_w, flag_h/3);
 }
 void clearCanvas(){
