@@ -2200,9 +2200,12 @@
       t3 = J.get$onClick$x(t1.querySelector("#ge"));
       t2 = H.getTypeArgumentByIndex(t3, 0);
       W._EventStreamSubscription$(t3._target, t3._eventType, H.functionTypeCheck(new L.main_closure4(), {func: 1, ret: -1, args: [t2]}), false, t2);
+      t2 = J.get$onClick$x(t1.querySelector("#uk"));
+      t3 = H.getTypeArgumentByIndex(t2, 0);
+      W._EventStreamSubscription$(t2._target, t2._eventType, H.functionTypeCheck(new L.main_closure5(), {func: 1, ret: -1, args: [t3]}), false, t3);
       t1 = J.get$onClick$x(t1.querySelector("#button"));
-      t2 = H.getTypeArgumentByIndex(t1, 0);
-      W._EventStreamSubscription$(t1._target, t1._eventType, H.functionTypeCheck(new L.main_closure5(), {func: 1, ret: -1, args: [t2]}), false, t2);
+      t3 = H.getTypeArgumentByIndex(t1, 0);
+      W._EventStreamSubscription$(t1._target, t1._eventType, H.functionTypeCheck(new L.main_closure6(), {func: 1, ret: -1, args: [t3]}), false, t3);
     },
     drawFR: function(ctx) {
       ctx.clearRect(0, 0, 300, 200);
@@ -2265,6 +2268,8 @@
     main_closure4: function main_closure4() {
     },
     main_closure5: function main_closure5() {
+    },
+    main_closure6: function main_closure6() {
     }
   };
   var holders = [C, H, J, P, W, L];
@@ -2544,13 +2549,13 @@
     call$0: function() {
       this.callback.call$0();
     },
-    $signature: 0
+    $signature: 1
   };
   P._AsyncRun__scheduleImmediateWithSetImmediate_internalCallback.prototype = {
     call$0: function() {
       this.callback.call$0();
     },
-    $signature: 0
+    $signature: 1
   };
   P._TimerImpl.prototype = {
     _TimerImpl$2: function(milliseconds, callback) {
@@ -2702,13 +2707,13 @@
     call$0: function() {
       P._Future__propagateToListeners(this.$this, this.listener);
     },
-    $signature: 0
+    $signature: 1
   };
   P._Future__prependListeners_closure.prototype = {
     call$0: function() {
       P._Future__propagateToListeners(this.$this, this._box_0.listeners);
     },
-    $signature: 0
+    $signature: 1
   };
   P._Future__chainForeignFuture_closure.prototype = {
     call$1: function(value) {
@@ -2732,7 +2737,7 @@
     call$0: function() {
       this.target._completeError$2(this.e, this.s);
     },
-    $signature: 0
+    $signature: 1
   };
   P._Future__propagateToListeners_handleWhenCompleteCallback.prototype = {
     call$0: function() {
@@ -2853,7 +2858,7 @@
     call$0: function() {
       this.future._complete$1(this._box_0.count);
     },
-    $signature: 0
+    $signature: 1
   };
   P.StreamSubscription.prototype = {};
   P.AsyncError.prototype = {
@@ -2876,7 +2881,7 @@
       error.stack = t2.toString$0(0);
       throw error;
     },
-    $signature: 0
+    $signature: 1
   };
   P._RootZone.prototype = {
     runGuarded$1: function(f) {
@@ -3165,7 +3170,7 @@
       H.interceptedTypeCheck(e, "$isMouseEvent");
       return L.drawFR($.ctx);
     },
-    $signature: 1
+    $signature: 0
   };
   L.main_closure0.prototype = {
     call$1: function(e) {
@@ -3183,14 +3188,14 @@
       t1.fill();
       return;
     },
-    $signature: 1
+    $signature: 0
   };
   L.main_closure1.prototype = {
     call$1: function(e) {
       H.interceptedTypeCheck(e, "$isMouseEvent");
       return L.drawROC($.ctx);
     },
-    $signature: 1
+    $signature: 0
   };
   L.main_closure2.prototype = {
     call$1: function(e) {
@@ -3206,7 +3211,7 @@
       t1.fillRect(0, 0, 300, 66.66666666666667);
       return;
     },
-    $signature: 1
+    $signature: 0
   };
   L.main_closure3.prototype = {
     call$1: function(e) {
@@ -3222,7 +3227,7 @@
       t1.fillRect(0, 0, 300, 66.66666666666667);
       return;
     },
-    $signature: 1
+    $signature: 0
   };
   L.main_closure4.prototype = {
     call$1: function(e) {
@@ -3238,15 +3243,78 @@
       t1.fillRect(0, 0, 300, 66.66666666666667);
       return;
     },
-    $signature: 1
+    $signature: 0
   };
   L.main_closure5.prototype = {
+    call$1: function(e) {
+      var t1, _s4_ = "#fff",
+        _s7_ = "#c9072a";
+      H.interceptedTypeCheck(e, "$isMouseEvent");
+      t1 = $.ctx;
+      t1.clearRect(0, 0, 300, 200);
+      t1.fillStyle = "#001b69";
+      t1.fillRect(0, 0, 300, 150);
+      t1.strokeStyle = _s4_;
+      t1.lineWidth = 30;
+      t1.beginPath();
+      t1.moveTo(0, 0);
+      t1.lineTo(300, 150);
+      t1.moveTo(0, 150);
+      t1.lineTo(300, 0);
+      t1.stroke();
+      t1.strokeStyle = _s7_;
+      t1.lineWidth = 10;
+      t1.beginPath();
+      t1.moveTo(0, 155);
+      t1.lineTo(150, 80);
+      t1.stroke();
+      t1.strokeStyle = _s7_;
+      t1.lineWidth = 10;
+      t1.beginPath();
+      t1.moveTo(150, 70);
+      t1.lineTo(295, -5);
+      t1.stroke();
+      t1.strokeStyle = _s7_;
+      t1.lineWidth = 10;
+      t1.beginPath();
+      t1.moveTo(150, 70);
+      t1.lineTo(305, 145);
+      t1.stroke();
+      t1.strokeStyle = _s7_;
+      t1.lineWidth = 10;
+      t1.beginPath();
+      t1.moveTo(150, 80);
+      t1.lineTo(-5, 5);
+      t1.stroke();
+      t1.strokeStyle = _s4_;
+      t1.lineWidth = 50;
+      t1.beginPath();
+      t1.moveTo(0, 75);
+      t1.lineTo(300, 75);
+      t1.moveTo(150, 0);
+      t1.lineTo(150, 150);
+      t1.stroke();
+      t1.strokeStyle = _s7_;
+      t1.lineWidth = 30;
+      t1.beginPath();
+      t1.moveTo(0, 75);
+      t1.lineTo(300, 75);
+      t1.moveTo(150, 0);
+      t1.lineTo(150, 150);
+      t1.stroke();
+      t1.fillStyle = _s4_;
+      t1.fillRect(0, 150, 300, 50);
+      return;
+    },
+    $signature: 0
+  };
+  L.main_closure6.prototype = {
     call$1: function(e) {
       H.interceptedTypeCheck(e, "$isMouseEvent");
       $.ctx.clearRect(0, 0, 300, 200);
       return;
     },
-    $signature: 1
+    $signature: 0
   };
   (function aliases() {
     var _ = J.Interceptor.prototype;
@@ -3272,7 +3340,7 @@
     _inherit(J.JSUnmodifiableArray, J.JSArray);
     _inheritMany(J.JSNumber, [J.JSInt, J.JSDouble]);
     _inheritMany(P.Error, [H.NullError, H.JsNoSuchMethodError, H.UnknownJsTypeError, H.TypeErrorImplementation, H.RuntimeError, P.AssertionError, P.NullThrownError, P.ArgumentError, P.UnsupportedError, P.UnimplementedError, P.ConcurrentModificationError, P.CyclicInitializationError]);
-    _inheritMany(H.Closure, [H.unwrapException_saveStackTrace, H.TearOffClosure, H.initHooks_closure, H.initHooks_closure0, H.initHooks_closure1, P._AsyncRun__initializeScheduleImmediate_internalCallback, P._AsyncRun__initializeScheduleImmediate_closure, P._AsyncRun__scheduleImmediateJsOverride_internalCallback, P._AsyncRun__scheduleImmediateWithSetImmediate_internalCallback, P._TimerImpl_internalCallback, P._Future__addListener_closure, P._Future__prependListeners_closure, P._Future__chainForeignFuture_closure, P._Future__chainForeignFuture_closure0, P._Future__chainForeignFuture_closure1, P._Future__propagateToListeners_handleWhenCompleteCallback, P._Future__propagateToListeners_handleWhenCompleteCallback_closure, P._Future__propagateToListeners_handleValueCallback, P._Future__propagateToListeners_handleError, P.Stream_length_closure, P.Stream_length_closure0, P._rootHandleUncaughtError_closure, P._RootZone_bindCallback_closure, P._RootZone_bindCallbackGuarded_closure, P._RootZone_bindUnaryCallbackGuarded_closure, W._EventStreamSubscription_closure, L.main_closure, L.main_closure0, L.main_closure1, L.main_closure2, L.main_closure3, L.main_closure4, L.main_closure5]);
+    _inheritMany(H.Closure, [H.unwrapException_saveStackTrace, H.TearOffClosure, H.initHooks_closure, H.initHooks_closure0, H.initHooks_closure1, P._AsyncRun__initializeScheduleImmediate_internalCallback, P._AsyncRun__initializeScheduleImmediate_closure, P._AsyncRun__scheduleImmediateJsOverride_internalCallback, P._AsyncRun__scheduleImmediateWithSetImmediate_internalCallback, P._TimerImpl_internalCallback, P._Future__addListener_closure, P._Future__prependListeners_closure, P._Future__chainForeignFuture_closure, P._Future__chainForeignFuture_closure0, P._Future__chainForeignFuture_closure1, P._Future__propagateToListeners_handleWhenCompleteCallback, P._Future__propagateToListeners_handleWhenCompleteCallback_closure, P._Future__propagateToListeners_handleValueCallback, P._Future__propagateToListeners_handleError, P.Stream_length_closure, P.Stream_length_closure0, P._rootHandleUncaughtError_closure, P._RootZone_bindCallback_closure, P._RootZone_bindCallbackGuarded_closure, P._RootZone_bindUnaryCallbackGuarded_closure, W._EventStreamSubscription_closure, L.main_closure, L.main_closure0, L.main_closure1, L.main_closure2, L.main_closure3, L.main_closure4, L.main_closure5, L.main_closure6]);
     _inheritMany(H.TearOffClosure, [H.StaticClosure, H.BoundClosure]);
     _inherit(H._AssertionError, P.AssertionError);
     _inherit(P._RootZone, P._Zone);
@@ -3419,7 +3487,7 @@
 ;
     C.C__RootZone = new P._RootZone();
   })();
-  var init = {mangledGlobalNames: {int: "int", double: "double", num: "num", String: "String", bool: "bool", Null: "Null", List: "List"}, mangledNames: {}, getTypeFromName: getGlobalFromName, metadata: [], types: [{func: 1, ret: P.Null}, {func: 1, ret: -1, args: [W.MouseEvent]}, {func: 1, ret: -1}, {func: 1, ret: -1, args: [{func: 1, ret: -1}]}, {func: 1, args: [,]}, {func: 1, ret: P.Null, args: [,]}, {func: 1, args: [, P.String]}, {func: 1, args: [P.String]}, {func: 1, ret: P.Null, args: [{func: 1, ret: -1}]}, {func: 1, ret: P.Null, args: [,], opt: [P.StackTrace]}, {func: 1, ret: [P._Future,,], args: [,]}, {func: 1, args: [W.Event]}], interceptorsByTag: null, leafTags: null};
+  var init = {mangledGlobalNames: {int: "int", double: "double", num: "num", String: "String", bool: "bool", Null: "Null", List: "List"}, mangledNames: {}, getTypeFromName: getGlobalFromName, metadata: [], types: [{func: 1, ret: -1, args: [W.MouseEvent]}, {func: 1, ret: P.Null}, {func: 1, ret: -1}, {func: 1, ret: -1, args: [{func: 1, ret: -1}]}, {func: 1, args: [,]}, {func: 1, ret: P.Null, args: [,]}, {func: 1, args: [, P.String]}, {func: 1, args: [P.String]}, {func: 1, ret: P.Null, args: [{func: 1, ret: -1}]}, {func: 1, ret: P.Null, args: [,], opt: [P.StackTrace]}, {func: 1, ret: [P._Future,,], args: [,]}, {func: 1, args: [W.Event]}], interceptorsByTag: null, leafTags: null};
   (function staticFields() {
     $.Closure_functionCounter = 0;
     $.BoundClosure_selfFieldNameCache = null;
